@@ -1,0 +1,228 @@
+db.persons.update({name:"extjs4.0"},{$set:{name:"extjs4.1"}})
+update persons set name = 'extjs4.1' where name = 'extjs4.0'
+
+
+
+res.contentType('json');//返回的数据类型   
+    res.send(JSON.stringify({ status:"success" }));//给客户端返回一个json格式的数据   
+    res.end();  
+
+
+
+npm install -g express
+npm install -g express@3.5.0
+
+mkdir mldnnodedemo
+cd mldnnodedemo 
+
+npm install express@3.5.0
+npm install express-mongoose
+npm install mongoose
+npm install supervisor
+npm install ejs
+npm install mysql
+
+
+supervisor app.js
+
+后台运行 
+npm install -g forever
+
+forever start app.js
+
+在LINUX中我们可以使用这种简单的方式让node.js在后台运行：
+nohup node your_app.js &
+ 
+
+forever可以让我们做得更好，并且可以跨平台的在windows和Linux下都能运行。
+forever的安装：
+npm install forever -g
+
+forever的用法：
+forever start your_app.js
+ 
+关闭守护进程：
+forever stop your_app.js
+
+重启守护进程：：
+forever restart your_app.js
+
+如果需要记录输出日志和错误：
+forever start -l forever.log -o out.log -e err.log your_app.js
+
+查看正在运行的程序：
+forever list 
+
+
+
+121.199.59.67  root/StarCraft2
+
+https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.6.5.tgz?_ga=1.7778290.1580138581.1413723566
+
+/root/mongodb-linux-x86_64-2.4.8/bin/mongod
+/root/mongodb-linux-x86_64-2.4.8/bin/mongo
+
+ln -s /root/mongodb-linux-x86_64-2.4.8/bin/mongod /usr/local/bin/mongod
+ln -s /root/mongodb-linux-x86_64-2.4.8/bin/mongo /usr/local/bin/mongo
+
+
+
+
+
+
+
+
+
+yum search openjdk
+yum install java-1.7.0-openjdk.x86_64
+java -version
+
+
+安装git 
+tar -xzf git-1.8.0.tar.gz
+cd git-1.8.0
+./configure -prefix=/usr/local/git --with-curl  --with-expat
+make && make install
+
+修改/etc/profile，在PATH中加入git路径，并执行source /etc/profile
+
+GIT_HOME=/usr/local/git
+PATH=$PATH:$GIT_HOME/bin:$GIT_HOME/libexec/git-core
+export PATH GIT_HOME
+
+确认是否安装成功
+
+git --version
+git version 1.8.0
+
+
+gitosit
+
+
+
+
+
+
+ln -s /usr/local/git/bin/git /usr/local/bin/git
+ln -s /usr/local/git/bin/git-upload-pack /usr/bin/git-upload-pack
+ln -s /usr/local/git/bin/git-receive-pack /usr/bin/git-receive-pack
+
+chmod 755 /home/git/repositories/gitosis-admin.git/hooks/post-update
+
+chown git:git /home/git
+chmod 777 /home/git
+chmod -R 777 /home/git
+
+su git
+chmod 700 ~/.ssh/
+chmod 700 /home/git
+chmod 600 ~/.ssh/authorized_keys
+
+
+git config --global user.name "spring"
+git config --global user.email spring@sohu.com
+ssh-keygen -t rsa
+
+git clone git@121.199.59.67:gitosis-admin.git 
+git clone git@121.199.59.67:/home/git/repositories/gitosis-admin.git/
+
+git clone git@121.199.59.67:/home/git/repositories/project1.git/
+git remote add origin git@121.199.59.67:/home/git/repositories/project1.git/
+
+
+
+
+
+
+/etc/httpd/conf.d/git.conf
+
+
+Alias /gitweb "/usr/local/git/share/gitweb/"
+
+<Directory "/usr/local/share/gitweb">
+    Options FollowSymLinks +ExecCGI
+    AddHandler cgi-script .cgi
+    DirectoryIndex index.cgi gitweb.cgi
+    Order allow,deny
+    Allow from all
+</Directory>
+
+
+/etc/gitweb.conf
+
+$projectroot = "/home/git/repositories"
+
+
+
+
+
+看linux是32位还是64位最简单的方法：
+getconf LONG_BIT
+
+wget  http://nodejs.org/dist/v0.10.32/node-v0.10.32-linux-x64.tar.gz
+
+tar xvf node-v0.10.32-linux-x64.tar.gz
+
+cd node-v0.10.32-linux-x64/bin
+
+
+ls
+./node -v    这就妥妥的了，node文件夹具体放在哪，叫什么名字随你怎么定。然后设置全局：
+
+
+/root/node-v0.10.32-linux-x64/bin
+
+ln -s /root/node-v0.10.32-linux-x64/bin/node /usr/local/bin/node
+ln -s /root/node-v0.10.32-linux-x64/bin/npm /usr/local/bin/npm
+
+./mongod --dbpath /spring/mongodb --syslog --fork
+
+
+
+关闭：
+./mongo 127.0.0.1:27017/admin
+
+>use admin
+>db.shutdownServer( )
+> db.shutdownServer()
+
+
+
+
+
+use mydb;
+
+db.users.insert({userid:'mldn',name:'lixinghua',password:'hello'}) ;
+db.users.insert({userid:'mldnjava',name:'mole',password:'nodejs'}) ;
+db.users.find();
+
+db.scmtypes.insert({id:'1',name:'lixinghua'});
+db.scmtypes.insert({id:'2',name:'mole'});
+
+db.scmtypes.find();
+db.scmtypes.remove();
+
+db.todos.insert({title:'1111',finished:false,post_date:Date()});
+db.todos.insert({title:'2222',finished:false,post_date:Date()});
+db.todos.insert({title:'3333',finished:false,post_date:Date()});
+
+db.todos.find();
+
+db.usedTypes.insert({id:'1',name:'lixinghua'});
+db.usedTypes.insert({id:'2',name:'mole'});
+db.usedTypes.find();
+
+
+
+jenkins安装
+wget -O /etc/yum.repos.d/jenkins.repo http://jenkins-ci.org/redhat/jenkins.repo  
+rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key  
+
+yum install jenkins  或 直接下载 http://pkg.jenkins-ci.org/redhat/jenkins-1.595-1.1.noarch.rpm
+
+service jenkins start  
+http://121.199.59.67:8080/
+
+/etc/sysconfig/jenkins
+service jenkins restart
+http://121.199.59.67:8181/

@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "service", "service\", "{B738858E-1452-4E87-A372-F3DFF101FC0B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/service"
+		Debug.AspNetCompiler.PhysicalPath = "service\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\service\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/service"
+		Release.AspNetCompiler.PhysicalPath = "service\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\service\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1275"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "www", "www\", "{3F0D4F1F-D2D9-4B31-8601-EF51FCD58C9D}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/www"
+		Debug.AspNetCompiler.PhysicalPath = "www\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\www\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/www"
+		Release.AspNetCompiler.PhysicalPath = "www\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\www\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2063"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "相关文档", "相关文档", "{6929ADF0-0F96-43F3-BFEA-44728A06B563}"
+	ProjectSection(SolutionItems) = preProject
+		相关文档\361y.sql = 相关文档\361y.sql
+		相关文档\cinema.sql = 相关文档\cinema.sql
+		相关文档\job.sql = 相关文档\job.sql
+		相关文档\笔记.txt = 相关文档\笔记.txt
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "myproject", "myproject\", "{4B368C49-EBC4-4956-B76E-A0AD75A56E49}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/myproject"
+		Debug.AspNetCompiler.PhysicalPath = "myproject\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\myproject\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/myproject"
+		Release.AspNetCompiler.PhysicalPath = "myproject\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\myproject\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "5785"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B738858E-1452-4E87-A372-F3DFF101FC0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B738858E-1452-4E87-A372-F3DFF101FC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F0D4F1F-D2D9-4B31-8601-EF51FCD58C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F0D4F1F-D2D9-4B31-8601-EF51FCD58C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B368C49-EBC4-4956-B76E-A0AD75A56E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B368C49-EBC4-4956-B76E-A0AD75A56E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

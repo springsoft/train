@@ -1,0 +1,7 @@
+
+use mldndb;
+
+db.scmType.insert({id:'1',name:'mks'});
+db.scmType.insert({id:'2',name:'svn'});
+
+db.scmType.find();
