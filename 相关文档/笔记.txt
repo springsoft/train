@@ -226,3 +226,12 @@ http://121.199.59.67:8080/
 /etc/sysconfig/jenkins
 service jenkins restart
 http://121.199.59.67:8181/
+
+
+vim /etc/group
+jenkins:x:103:root
+
+vim /etc/sysconfig/jenkins
+JENKINS_USER="root"
+
+
