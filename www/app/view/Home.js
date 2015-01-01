@@ -3,7 +3,7 @@
     xtype: 'home',
     alternateClassName: 'home',
     config: {
-        title: '九宫格',
+        title: '九宫格1',
         layout: 'vbox',
         defaults: {
             layout: 'hbox'
