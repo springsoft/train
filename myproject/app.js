@@ -13,6 +13,8 @@ var usedType = require('./routes/usedType');
 var used = require('./routes/used');
 var uploadfile = require('./routes/uploadfile');
 
+var version = require('./routes/version');
+
 var mongoDB = require('./dao/db');
 
 var http = require('http');
@@ -73,6 +75,9 @@ app.post('/used/update', used.save);
 app.get('/used/list', used.list);
 app.get('/used/one', used.findone);
 app.post('/used/delete', used.delete);
+
+app.all('/version/list', version.list);
+
 
 app.get('/start', uploadfile.start);
 app.post('/upload', uploadfile.upload);
